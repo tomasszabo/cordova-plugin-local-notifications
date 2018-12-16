@@ -46,6 +46,7 @@
         <engine name="cordova-windows" version=">=4.2.0"  />
         <engine name="android-sdk"     version=">=26" />
         <engine name="apple-ios"       version=">=10.0.0" />
+        <engine name="apple-osx"       version=">=10.14.0" />
     </engines>
 
     <!-- dependencies -->
@@ -86,6 +87,37 @@
 
         <header-file src="src/ios/UNNotificationRequest+APPLocalNotification.h" />
         <source-file src="src/ios/UNNotificationRequest+APPLocalNotification.m" />
+    </platform>
+    
+    <!-- osx -->
+    <platform name="osx">
+        <config-file target="config.xml" parent="/*">
+            <feature name="LocalNotification">
+                <param name="osx-package" value="APPLocalNotification" onload="true" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <framework src="UserNotifications.framework" />
+        <framework src="CoreLocation.framework" />
+
+        <header-file src="src/osx/APPLocalNotification.h" />
+        <source-file src="src/osx/APPLocalNotification.m" />
+
+        <header-file src="src/osx/APPNotificationCategory.h" />
+        <source-file src="src/osx/APPNotificationCategory.m" />
+
+        <header-file src="src/osx/APPNotificationContent.h" />
+        <source-file src="src/osx/APPNotificationContent.m" />
+
+        <header-file src="src/osx/APPNotificationOptions.h" />
+        <source-file src="src/osx/APPNotificationOptions.m" />
+
+        <header-file src="src/osx/UNUserNotificationCenter+APPLocalNotification.h" />
+        <source-file src="src/osx/UNUserNotificationCenter+APPLocalNotification.m" />
+
+        <header-file src="src/osx/UNNotificationRequest+APPLocalNotification.h" />
+        <source-file src="src/osx/UNNotificationRequest+APPLocalNotification.m" />
     </platform>
 
     <!-- android -->
