@@ -1,7 +1,32 @@
 {
-  "name": "cordova-plugin-local-notification",
-  "version": "0.9.0-beta.3",
-  "description": "Schedules and queries for local notifications",
+  "_from": "git+https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+  "_id": "cordova-plugin-local-notification@0.9.0-beta.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-local-notification",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+    "rawSpec": "https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+    "saveSpec": "git+https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+    "fetchSpec": "https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/tomasszabo/cordova-plugin-local-notifications.git#2d85f17525195b8c73399c91441e2e8e018acfdd",
+  "_spec": "https://github.com/tomasszabo/cordova-plugin-local-notifications.git",
+  "_where": "/Users/tomec/Projects/taskio/taskio_desktop",
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "bugs": {
+    "url": "https://github.com/katzer/cordova-plugin-local-notifications/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-local-notification",
     "platforms": [
@@ -11,20 +36,8 @@
       "osx"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-local-notifications.git"
-  },
-  "keywords": [
-    "appplant",
-    "notification",
-    "local notification",
-    "user notification",
-    "ecosystem:cordova",
-    "cordova-ios",
-    "cordova-android",
-    "cordova-windows"
-  ],
+  "deprecated": false,
+  "description": "Schedules and queries for local notifications",
   "engines": [
     {
       "name": "cordova",
@@ -33,6 +46,14 @@
     {
       "name": "cordova-android",
       "version": ">=6.0.0"
+    },
+    {
+      "name": "cordova-osx",
+      "version": ">=4.0.2"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.5.0"
     },
     {
       "name": "cordova-windows",
@@ -51,10 +72,23 @@
       "version": ">=10.14.0"
     }
   ],
-  "author": "Sebastián Katzer",
+  "homepage": "https://github.com/katzer/cordova-plugin-local-notifications#readme",
+  "keywords": [
+    "appplant",
+    "notification",
+    "local notification",
+    "user notification",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-osx"
+  ],
   "license": "Apache 2.0",
-  "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-local-notifications/issues"
+  "name": "cordova-plugin-local-notification",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katzer/cordova-plugin-local-notifications.git"
   },
-  "homepage": "https://github.com/katzer/cordova-plugin-local-notifications#readme"
+  "version": "0.9.0-beta.3"
 }
